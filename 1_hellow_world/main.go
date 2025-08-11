@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	fmt.Println("hello world")
 }
 
@@ -12,5 +12,5 @@ func main(){
 // go build <file path>
 // ./<exacutable binary>
 
-// 2. Directly run 
+// 2. Directly run
 // go run <file path>

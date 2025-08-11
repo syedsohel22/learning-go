@@ -5,11 +5,10 @@ import (
 	"time"
 )
 
-
-func main(){
+func main() {
 	// simpe switch
 	// Does not need break like others and defualt is optional
-	i:=5
+	i := 5
 	switch i {
 	case 1:
 		fmt.Println("one")
@@ -30,20 +29,20 @@ func main(){
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("It's the weekend")
-		default:
+	default:
 		fmt.Println("It's a weekday")
 	}
 
 	// type switch
 
-	 whoIam := func(i interface{}){
-		switch t:=i.(type){
+	whoIam := func(i interface{}) {
+		switch t := i.(type) {
 		case string:
-			fmt.Println("I'm a string",t)
+			fmt.Println("I'm a string", t)
 		case int:
-			fmt.Println("I'm an int",t)
+			fmt.Println("I'm an int", t)
 		case bool:
-			fmt.Println("I'm a bool",t)
+			fmt.Println("I'm a bool", t)
 		default:
 			fmt.Printf("Don't know type %T\n", t)
 		}
@@ -52,6 +51,5 @@ func main(){
 	whoIam("hello")
 	whoIam(1)
 	whoIam(true)
-
 
 }

@@ -2,20 +2,18 @@ package main
 
 import "fmt"
 
+func main() {
+	age := 17
 
-func main(){
-	age:=17
-
-	if age>=18{
+	if age >= 18 {
 		fmt.Println("Person is an adult")
-	}else if age>=15{
+	} else if age >= 15 {
 		fmt.Println("Person is a teenager")
-	}else{
+	} else {
 		fmt.Println("Person is a child")
 	}
 
 	// in go we dont use () in loop and if else
-
 
 	// Logical operators
 	// || OR operator
