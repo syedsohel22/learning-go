@@ -21,4 +21,19 @@ func main() {
 
 	fmt.Println(a)
 	fmt.Println(b)
+
+	// accessing map element
+
+	fmt.Printf(a["brand"])
+
+	fmt.Println(a)
+
+	a["year"] = "1970" // Updating an element
+	a["color"] = "red" // Adding an element
+
+	fmt.Println(a)
+
+	delete(a, "year") // Deleting an element
+
+	fmt.Println(a)
 }
